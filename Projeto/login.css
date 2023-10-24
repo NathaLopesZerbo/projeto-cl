@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background: #cc5d0d;
+}
+
+.card-login{
+    background: rgb(133, 133, 133);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex(75, 75, 75);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+}
