@@ -3,3 +3,175 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+
+    --cor01:#d34410;
+    --cor02:black;
+    --cor03:#EB6507;
+    --cor04:#EB5D07;
+    --cor05:#cc5d0d;
+}
+
+body{
+    height: 300vh;
+    background-color: var(--cor05);
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+.logo-letra{
+    font-size: 45px;
+}
+
+.navbar{
+    background-image: linear-gradient(to top, var(--cor03), var(--cor04), var(--cor01));
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--cor06);
+}
+
+ .nav-button{
+    color: white;
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-button:hover{
+    color: black;
+    background-color: white;
+} 
+
+a.link-educa{
+    text-decoration: none;
+}
+
+.inf-lado{
+    margin-top: 123px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    text-align: justify;
+    width: 700px;
+}
+
+.item h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.item p{
+    line-height: 2;
+    color: white;
+}
+
+.img-turma{
+    width: 150px;
+    height: 150px;
+}
+/* ------------------------------- */
+
+.cursos{
+    display: flex;
+}
+
+.titulo-curso{
+    margin-top: 180px;
+    margin-bottom: 80px;
+    color: black;
+    text-align: center;
+    font-size: 80px;
+}
+
+.cursos2{
+    margin-top: 10px;
+    display: flex;
+}
+
+.aulas{
+    border-radius: 20px;
+    margin: 20px;
+    width: 380px;
+    height: 260px;
+    background-color: var(--cor02);
+    transition: 0.5s ease;
+}
+
+.aulas:hover{
+    scale: 1.10;
+}
+
+
+.depoimentos{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pessoa1,
+.pessoa2,
+.pessoa3{
+    text-align: center;
+    width: 700px;
+}
+
+ h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.pessoa1,
+.pessoa2,
+.pessoa3 p{
+    line-height: 2;
+    color: white;
+}
+
+.titulo-depoimento{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 90px;
+    color: aqua;
+}
+
+
+
+

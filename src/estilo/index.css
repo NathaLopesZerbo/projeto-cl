@@ -81,9 +81,10 @@ body{
 }
 
 .nav-button:hover{
-    color: black;
     background-color: white;
+    color: black;
 } 
+
 
 /* ---------------------CONTENT---------------------------- */
 
