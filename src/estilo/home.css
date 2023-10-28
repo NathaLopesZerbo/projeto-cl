@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +15,9 @@
     --cor03:#EB6507;
     --cor04:#EB5D07;
     --cor05:#cc5d0d;
+
+    --fonte-depoimentos:font-family: 'Playfair Display', serif;
+    font-family: 'Vollkorn', serif;
 }
 
 body{
@@ -116,11 +123,14 @@ a.link-educa{
     color: black;
     text-align: center;
     font-size: 80px;
+    font-family: 'Berkshire Swash', serif;
 }
 
 .cursos2{
     margin-top: 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .aulas{
@@ -138,9 +148,9 @@ a.link-educa{
 
 
 .depoimentos{
-    margin-top: 150px;
+    margin-top: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -161,17 +171,26 @@ a.link-educa{
 .pessoa1,
 .pessoa2,
 .pessoa3 p{
-    line-height: 2;
+    line-height: 3;
     color: white;
 }
 
 .titulo-depoimento{
-    margin-top: 200px;
+    margin-top: 120px;
     text-align: center;
     font-size: 90px;
-    color: aqua;
+    color: #8f2c08;
+    font-family: 'Berkshire Swash', serif;
 }
 
 
 
+.imagem{
+    width: 200px;
+    height: 220px;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
 
