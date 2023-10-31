@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/estilo/login.css">
-    <link rel="shortcut icon" href="../imagens/favicon/favicon.ico" type="image/x-icon">
-    <title>EDUCA+ - Login</title>  
+    <link rel="stylesheet" href="../estilo/login.css">
+    <title>Tela de Login</title>
 </head>
 <body>
-    <div class="card-login">
-        <h1>Login</h1>
-        <div class="txtfield">
-            <label for="user">Usuário</label>
-            <input type="text" name="user" placeholder="Digite o nome do usuário">
+    <form class="login">
+        <h2>Login</h2>
+        <div class="box-user">
+            <input type="text" name="" required>
+            <label>Usuário</label>
         </div>
-        <div class="txtfield">
-            <label for="user">Usuário</label>
-            <input type="password" name="pass" placeholder="Digite a senha">
+        <div class="box-user">
+            <input type="password" name="" required>
+            <label>Senha</label>
         </div>
-        <button class="btn-login">Login</button>
-    </div>
+        <div>
+            <a href="#" class="forget"> Esqueceu a senha?</a> <br>
+            <a href="../../index.html" class="forget"> Voltar a Página Inicial</a>
+        </div>
+        <a href="../../index.html" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Entrar
+        </a>
+    </form>
 </body>
 </html>
