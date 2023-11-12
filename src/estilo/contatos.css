@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+.principal{
+    display: grid;
+    grid-template-areas: 
+    "1 2";
+    grid-template-columns: 1fr 1fr;
+}
+
+.pt1{
+    grid-area: 1;
+}
+
+.pt2{
+    grid-area: 2;
+}
