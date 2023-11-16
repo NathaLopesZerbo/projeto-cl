@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+    --cor01:#d34410;
+    --cor02:black;
+    --cor03:#EB6507;
+    --cor04:#EB5D07;
+    --cor05:#cc5d0d;
+
+    --fonte-depoimentos:font-family: 'Playfair Display', serif;
+    font-family: 'Vollkorn', serif;
+}
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+.logo-letra{
+    font-size: 45px;
+}
+
+.navbar{
+    background-image: linear-gradient(to top, var(--cor03), var(--cor04), var(--cor01));
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+    position: relative;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--cor06);
+}
+
+ .nav-button{
+    color: white;
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-button:hover{
+    color: black;
+    background-color: white;
+} 
+
+a.link-educa{
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 121.1vb;
+    background: cadetblue;
+}
+
+section::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 140%;
+    background: #ff9d60;
+}
+
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    background-color: white;
+}
