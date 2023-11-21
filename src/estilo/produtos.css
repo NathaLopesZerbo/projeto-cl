@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 80vw;
+    background-color: var(--cor05);
+}
 
 :root{
 
@@ -11,6 +15,9 @@
     --cor03:#EB6507;
     --cor04:#EB5D07;
     --cor05:#cc5d0d;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+
+
 }
 
 
@@ -69,4 +76,121 @@
 
 a.link-educa{
     text-decoration: none;
+}
+/* -------------------------------- */
+
+
+.sub-heading{
+    text-align: center;
+    color: var(--cor04);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: white;
+    background-color: black;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    transition: .2s all ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--cor01);
+    letter-spacing: .1rem;
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    grid: 5rem;
+}
+
+.dishes .box-container .box{
+    padding: 1.5rem;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-cart-shopping{
+    position: absolute;
+    top: 10px;
+    background-color: var(--cor04);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 25px;
+    color: white;
+    transition: .5s all ease-in-out;
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-cart-shopping:hover{
+    background-color: #9b9797;
+    color: whitesmoke;
+
+}
+
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
+}
+
+.dishes .box-container .box .fa-cart-shopping{
+    left: -15rem;
+}
+
+
+.dishes .box-container .box:hover .fa-heart{
+    right: 10px;
+}
+
+.dishes .box-container .box:hover .fa-cart-shopping{
+    left: 10px;
+}
+
+.dishes .box-container .box img{
+    height: 17rem;
+    margin: 2rem 0;
+}
+
+.dishes .box-container .box h3{
+    color: var(--cor05);
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+    padding:1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--cor03);
+}
+
+.dishes .box-container .box span{
+    color: #2f8000;
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
 }
