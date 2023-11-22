@@ -55,7 +55,7 @@ body{
 }
 
 .navbar ul li a:hover{
-    color: var(--cor06);
+    color: var(--cor02);
 }
 
  .nav-button{
@@ -76,6 +76,10 @@ body{
 
 a.link-educa{
     text-decoration: none;
+}
+
+#marcado-produto{
+    color: var(--cor02);
 }
 /* -------------------------------- */
 

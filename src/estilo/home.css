@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    height: 80vw;
+    background-color: var(--cor05);
 }
 
 :root{
@@ -15,15 +15,9 @@
     --cor03:#EB6507;
     --cor04:#EB5D07;
     --cor05:#cc5d0d;
-    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.349);
+    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.247);
 
-    --fonte-depoimentos:font-family: 'Playfair Display', serif;
-    font-family: 'Vollkorn', serif;
-}
 
-body{
-    height: 300vh;
-    background-color: var(--cor05);
 }
 
 
@@ -61,7 +55,7 @@ body{
 }
 
 .navbar ul li a:hover{
-    color: var(--cor06);
+    color: var(--cor02);
 }
 
  .nav-button{
@@ -82,6 +76,10 @@ body{
 
 a.link-educa{
     text-decoration: none;
+}
+
+#marcado-home{
+    color: var(--cor02);
 }
 
 .inf-lado{
@@ -175,7 +173,9 @@ a.link-educa{
 .pessoa2,
 .pessoa3 p{
     line-height: 3;
+    font-size: 1.1em;
     color: white;
+    text-align: justify;
 }
 
 .titulo-depoimento{
