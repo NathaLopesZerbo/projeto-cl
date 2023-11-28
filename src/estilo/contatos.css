@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 :root{
 
     --cor01:#d34410;
@@ -82,11 +75,25 @@ a.link-educa{
     color: var(--cor02);
 }
 
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 121.1vb;
+    min-height: 100vh;
     background: cadetblue;
 }
 
@@ -97,7 +104,7 @@ section::before
     top: 0;
     left: 0;
     width: 50%;
-    height: 140%;
+    height: 120vh;
     background: #ff9d60;
 }
 
@@ -107,5 +114,30 @@ section::before
     min-height: 550px;
     display: flex;
     z-index: 1000;
-    background-color: white;
+}
+
+.container .pt1{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background-color: #fa7e30;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+
+.container .pt2{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: white;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
 }
