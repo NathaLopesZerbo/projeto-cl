@@ -1,51 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <meta name    = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Contatos Educa+</title>
-    <link rel="shortcut icon" href="../imagens/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilo/contatos.css">
+    <link rel = "shortcut icon" href = "../imagens/favicon/favicon.ico" type = "image/x-icon">
+    <link rel = "stylesheet" href    = "../estilo/contatos.css">
 </head>
 <body>
-    <header class="baner">
-        <nav class="navbar">
-          <a href="../../index.html" class="link-educa">
-              <h1 class="logo"><span class="logo-letra">EDUCA</span>+</h1>
+    <header class = "baner">
+    <nav    class = "navbar">
+    <a      href  = "../../index.html" class = "link-educa">
+    <h1     class = "logo"><span class       = "logo-letra">EDUCA</span>+</h1>
           </a>
             <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="produtos.html">Product</a></li>
-              <li><a href="servicos.html">Services</a></li>
-              <li><a href="suporte.html">Suport</a></li>
-              <li><a href="contatos.html" id="marcado-contato">Contact</a></li>
+              <li><a href = "home.html">Home</a></li>
+              <li><a href = "produtos.html">Product</a></li>
+              <li><a href = "servicos.html">Services</a></li>
+              <li><a href = "suporte.html">Suport</a></li>
+              <li><a href = "contatos.html" id = "marcado-contato">Contact</a></li>
             </ul>
-          <a href="login.html">
-              <button type="button" class="nav-button">
+          <a      href = "login.html">
+          <button type = "button" class = "nav-button">
                   Login
               </button>
           </a>
         </nav>
       </header>
     <section>
-        <div class="container">  
-        <div class="pt1">
-            <h1>
+        <div class = "container">
+        <div class = "pt1">
+        <h1  class = "textpt1">
                 Ficou com alguma duvida? <br>
-                entre em contato com a gente
+                Entre em contato com a gente
             </h1>
         </div>      
-        <div class="pt2">
+        <div class = "pt2">
             <h1>
                 Envie sua mensagem
             </h1>
-            <div class="area-mensagem">
-                <form action="" method="post">
-                    <input type="text" placeholder="Nome Completo">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Escreva sua duvida">
-                </form>
+            <form action = "" method = "post">
+            <div  class  = "area-mensagem">
+                
+                    <div   class = "area-input v2">
+                    <input type  = "text" required>
+                        <span>Nome</span>
+                    </div>
+                    <div   class = "area-input v2">
+                    <input type  = "text" required>
+                        <span>Sobrenome</span>
+                    </div>
+                    <div   class = "area-input v2">
+                    <input type  = "email" required>
+                        <span>Email</span>
+                    </div>
+                    <div   class = "area-input v2">
+                    <input type  = "text" required>
+                        <span>Telefone</span>
+                    </div>
+                    <div class = "area-input v3">
+                        <textarea required></textarea> <!--text area server como o input só que para uma area de testo maior-->
+                        <span>Escreva a sua divida ou mensagem</span>
+                    </div>
+                    <div   class = "area-input v3">
+                    <input type  = "submit" value = "Enviar">
+                    </div>
             </div>
+        </form>
         </div>
     </div>
     </section>
