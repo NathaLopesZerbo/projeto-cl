@@ -1,12 +1,14 @@
+:root{
+
+    --cor01:#d34410;
+    --cor02:black;
+    --cor03:#EB6507;
+    --cor04:#EB5D07;
+    --cor05:#cc5d0d;
+    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.247);
 
 
-
-
-
-
-
-
-
+}
 
 *{
     margin: 0;
@@ -19,29 +21,51 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: cadetblue;
-    background: rgb(253, 122, 62);
+    background: rgb(255, 142, 89);
 }
 section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
     height: 100%;
-    background: white;
-    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+    background: rgb(255, 107, 38);
 }
 
 .container{
-    
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
 }
 
-.textpt1{
-   text-align: center;
-   padding: 20px;
-   margin-top: 18vh;
-   font-family: 'Playfair Display', serif;
+.container .pt1{
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    background: rgb(255, 115, 0);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
 }
-.pt2 h2{
-    font-size: 24px;
-    font-weight: 500;
+
+.container .pt2{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: rgb(255, 255, 255);
 }
+
 .container .pt2 .area-mensagem{
     position: relative;
     display: flex;
@@ -65,6 +89,7 @@ section::before{
     resize: none;
     padding: 5px 0;
     font-size: 18px;
+    font-weight: 300;
     border: none;
     outline: none;
     color: black;
@@ -97,8 +122,14 @@ section::before{
     position: relative;
     cursor: pointer;
     background-color: var(--cor05);
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 12px;
     max-width: 150px ;
+    padding: 12PX;
+    transition: 0.4s;
+}
+
+.container .pt2 .area-mensagem .area-input input[type="submit"]:hover{
+    background: var(--cor03);
 }
