@@ -26,7 +26,7 @@ section{
 section::before{
     content: '';
     position: absolute;
-    top: 0;
+    top: 18.9%;
     left: 0;
     width: 50%;
     height: 100%;
@@ -132,4 +132,78 @@ section::before{
 
 .container .pt2 .area-mensagem .area-input input[type="submit"]:hover{
     background: var(--cor03);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    font-size: 30px;
+    color: white;
+}
+
+.logo-letra{
+    font-size: 45px;
+}
+
+.navbar{
+    background-image: linear-gradient(to top, var(--cor03), var(--cor04), var(--cor01));
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--cor02);
+}
+
+ .nav-button{
+    color: white;
+    font-size: 15px;
+    padding: 15px 25px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-button:hover{
+    color: black;
+    background-color: white;
+} 
+
+a.link-educa{
+    text-decoration: none;
 }
